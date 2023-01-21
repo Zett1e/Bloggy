@@ -26,7 +26,8 @@ const Register = () => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center bg-yellow-200">
+    <div className="h-screen flex flex-col justify-center items-center bg-yellow-200">
+    <h1 className="text-3xl font-medium mb-5">Register</h1>
       <form onSubmit={registerHandler} className="flex flex-col gap-4 w-[30%]">
         <div>
           <div className="mb-2 block">

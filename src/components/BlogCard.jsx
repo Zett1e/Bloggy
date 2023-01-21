@@ -28,7 +28,7 @@ const BlogCard = ({ blog, write }) => {
   return (
     <div className="flex items-center pb-5 border-b-[1px] mb-5">
       <div className="w-[70%]">
-        <h1 onClick={()=>navigate('detail',{state: {blog,author}})} className="text-2xl font-medium mb-2 cursor-pointer">
+        <h1 onClick={()=>navigate('/detail',{state: {blog,author}})} className="text-2xl font-medium mb-2 cursor-pointer">
           {blog.title}
         </h1>
         <div className="flex gap-5">

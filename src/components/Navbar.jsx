@@ -26,14 +26,14 @@ const Navbar = () => {
       </div>
       {user ? (
         <nav className="flex gap-10">
-          <Link className="font-medium" to="addblog">
+          <Link className="font-medium" to="/addblog">
             New Blog
           </Link>
           <div className="font-medium">
             <Dropdown label={user.name} inline={true}>
               <Dropdown.Item
                 onClick={() => {
-                  navigate("myblogs");
+                  navigate("/myblogs");
                 }}
               >
                 My Blogs
